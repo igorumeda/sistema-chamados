@@ -1,0 +1,112 @@
+.sidebar {
+    margin:0;
+    padding: 0;
+    background-color: #181C2e;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+    background: url('../../assets/header.jpg');
+    background-color: #181C2e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sidebar div {
+    width: 100%;
+    height: 150px;
+    padding-top: 30px;
+}
+
+.sidebar div img {
+    border: 2px solid #181C2e;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    -webkit-filter: drop-shadow(2px 3px 6px #121212);
+    filter: drop-shadow(2px 3px 3px black);
+    object-fit: cover;
+}
+
+.sidebar a, button.logout {
+    width: 100%;
+    display: block;
+    color: rgba(255,255,255,0.7);
+    padding: 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: ease-in-out .4s;
+    border: 0;
+    background-color: transparent;
+}
+
+.sidebar button.logout {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.sidebar * {
+    margin-right: 5px;
+}
+
+.sidebar a:hover, button:hover {
+    background-color: #121212;
+    color: white;
+    opacity: 0.8;
+}
+
+.sidebar button.logout {
+    vertical-align: bottom;
+}
+
+.sidebar a svg{
+    margin-right: .5em;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a{
+        float: left;
+    }
+
+    .sidebar div {
+        display: none;
+    }
+
+    .sidebar a svg{
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+
+    .sidebar a svg {
+        display: none;
+    }
+    
+}

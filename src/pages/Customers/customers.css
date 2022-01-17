@@ -1,0 +1,39 @@
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.table h2 {
+    margin-bottom: 20px;
+}
+
+.table table {
+    width: 100%;
+}
+
+.table thead {
+    text-align: left;
+    font-weight: bold;
+}
+
+.table thead tr td {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.table tbody tr td {
+    padding: 10px 0;
+}
+
+.table .action {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.table button {
+    padding: 2px;
+    margin-left: 5px;
+}
